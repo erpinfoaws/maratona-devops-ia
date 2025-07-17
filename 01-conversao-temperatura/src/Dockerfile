@@ -1,6 +1,6 @@
 # criar um dockerfile para criar uma imagem do nodejs
 FROM node:18
-workdir /app
+WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
