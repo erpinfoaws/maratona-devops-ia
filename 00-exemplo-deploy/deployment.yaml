@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: web
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: web
-        image: erpinfo527/web-color:blue
+        image: fabricioveronez/web-color:blue
         ports:
         - containerPort: 80
